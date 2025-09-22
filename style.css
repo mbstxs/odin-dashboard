@@ -110,24 +110,80 @@ button:hover {
     cursor: pointer;
 }
 
-#project-cont {
-    display: grid;
-    grid-template: repeat(3, 164px) / repeat(2, 348px);
+#main-cont {
+    display: flex;
     gap: 20px;
 }
 
-.project-item {
-    background-color: var(--item-bg);
+#main-grid {
+    grid-area: main;
+    display: grid;
+    gap: 20px;
+    grid-template: repeat(3, 164px) / repeat(2, 348px);
+}
+
+.project-item,
+.ann-item,
+.trend-item,
+#ann-cont,
+#trend-cont {
     border-radius: 8px;
+}
+
+.project-item,
+.ann-item,
+.trend-item {
     padding-left: 20px;
+}
+
+.project-item {
     border-left: 8px solid var(--item-border);
 }
 
 .project-item>p,
-.project-item>h4 {
+.project-item>h4,
+.ann-item>p,
+.ann-item>h4,
+.trend-item>div>p,
+.trend-item>div>h4 {
     margin: 0;
 }
 
-.project-item>h4 {
+.project-item>h4,
+.trend-item>h4 {
     margin-top: 24px;
+    margin-bottom: 4px;
+}
+
+
+#side-cont,
+#ann-grid,
+#trend-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.ann-item,
+.trend-item {
+    font-size: 12px;
+}
+
+#side-cont {
+    gap: 28px;
+}
+
+#ann-cont,
+#trend-cont {
+    display: grid;
+    gap: 16px;
+    padding-block: 24px;
+}
+
+.project-item,
+.ann-item,
+.trend-item,
+#ann-cont,
+#trend-cont {
+    background-color: var(--item-bg);
+    padding-right: 12px;
 }
