@@ -57,5 +57,14 @@ main {
 main header {
     padding: 12px;
     display: flex;
+    flex-direction: column;
     background-color: var(--main-item-bg);
+}
+
+#top-cont,
+#bottom-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
