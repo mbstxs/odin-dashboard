@@ -55,7 +55,7 @@ main {
 }
 
 main header {
-    padding: 12px;
+    padding: 8px 24px;
     display: flex;
     flex-direction: column;
     background-color: var(--main-item-bg);
@@ -67,4 +67,14 @@ main header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#searchbar {
+    border-radius: 16px;
+    background-color: var(--main-bg);
+    width: 600px;
+    height: 20px;
+    font-size: 14px;
+    outline: none;
+    padding-inline: 8px;
 }
