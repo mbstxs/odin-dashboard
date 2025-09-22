@@ -15,7 +15,7 @@ Marcelo Bastos
 
 # How to View
 
-To view this project click [here]()
+To view this project click [here](htts://mbstxs.github.io/odin-dashboard)
 
 # Credits
 
