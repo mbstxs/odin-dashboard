@@ -5,6 +5,8 @@ body {
     --aside-size: 20px;
     --aside-weight: 500;
     --main-item-bg: #fff;
+    --btn-bg: #4090cc;
+    --btn-color: #fff;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -55,7 +57,7 @@ main {
 }
 
 main header {
-    padding: 8px 24px;
+    padding: 8px 40px;
     display: flex;
     flex-direction: column;
     background-color: var(--main-item-bg);
@@ -77,4 +79,21 @@ main header {
     font-size: 14px;
     outline: none;
     padding-inline: 8px;
+}
+
+#options-cont {
+    display: flex;
+    gap: 16px
+}
+
+#bottom-cont button {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border-radius: 16px;
+    padding: 8px 24px;
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
 }
